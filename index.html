@@ -911,10 +911,8 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         @media print {
             /* 배경/색상 그대로 출력 */
             * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-            /* UI 요소 숨김 */
+            /* UI 요소 숨김 (Career Timeline은 표기 유지) */
             .toolbar { display: none !important; }
-            /* Career Timeline nav — 인터랙티브, PDF 불필요 */
-            #section-career-timeline { display: none !important; }
             /* 카드 page-break 방지 */
             .glass-card { break-inside: avoid; page-break-inside: avoid; }
             /* details 토글 — 접힌 채로 출력 */
