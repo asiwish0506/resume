@@ -915,9 +915,10 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             h1, h2, h3, .subtitle, .main-points li, .detail-list { color: black !important; }
             .accent-yellow, .highlight, .tech-stack, .impact-text { color: #000 !important; font-weight: bold; background: none !important; border: none !important;}
             .lead-text { color: #000 !important; border: 1px solid #000 !important; background: none !important;}
-            /* Force details open when printing */
-            details { display: block !important; }
-            details[open] summary { display: none; }
+            /* Keep details collapsed when printing */
+            details > :not(summary) { display: none !important; }
+            summary { list-style: none !important; cursor: default; }
+            summary::marker, summary::-webkit-details-marker { display: none !important; }
         }
 
         @media (max-width: 600px) {
@@ -943,7 +944,8 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
     
     <header>
         <h1>천호진 (Hojin Chon)</h1>
-        <div class="subtitle">Data / Business Analyst</div>
+        <div class="subtitle" style="margin-bottom: 8px;">Data / Business Analyst</div>
+        <div style="font-size: 0.95rem; margin-bottom: 25px;"><a href="https://asiwish0506.github.io/resume/" class="highlight" style="text-decoration: none; font-weight: 500;">https://asiwish0506.github.io/resume/</a></div>
         <!-- Contact Info Removed -->
     </header>
 
