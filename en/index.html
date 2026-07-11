@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hojin Chon - Growth Strategy & Data Lead</title>
+    <meta name="description" content="Hojin Chon · Data / Business Analyst resume">
+    <link rel="canonical" href="https://asiwish0506.github.io/resume/en/">
+    <link rel="alternate" hreflang="ko" href="https://asiwish0506.github.io/resume/">
+    <link rel="alternate" hreflang="en" href="https://asiwish0506.github.io/resume/en/">
+    <link rel="alternate" hreflang="x-default" href="https://asiwish0506.github.io/resume/">
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+        :root {
+            /* Theme Colors: Dark Navy Professional */
+            --bg-base: #0f172a;
+            --bg-gradient-1: #1e293b;
+            --bg-gradient-2: #020617;
+            
+            /* Text Colors */
+            --text-main: #f8fafc;
+            --text-secondary: #94a3b8;
+            
+            /* Accents */
+            --accent-yellow: #fbbf24;
+            --accent-yellow-bg: rgba(251, 191, 36, 0.1);
+            
+            --accent-red-muted: #e11d48;
+            --accent-red-bg: rgba(225, 29, 72, 0.15);
+
+            /* Glassmorphism Variables */
+            --glass-bg: rgba(30, 41, 59, 0.6); 
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            --card-hover-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        * { box-sizing: border-box; }
+        
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+            font-size: 17px;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            background-image: 
+                radial-gradient(circle at 0% 0%, var(--bg-gradient-1) 0px, transparent 50%),
+                radial-gradient(circle at 100% 100%, var(--bg-gradient-1) 0px, transparent 50%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        /* Toolbar Styling */
+        .toolbar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid var(--glass-border);
+            padding: 8px 16px;
+            border-radius: 8px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            backdrop-filter: blur(8px);
+        }
+
+        .btn {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            border: 1px solid var(--glass-border);
+            padding: 6px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-main);
+            border-color: var(--text-secondary);
+        }
+
+        .btn.primary {
+            background: var(--accent-yellow);
+            color: var(--bg-base);
+            border-color: var(--accent-yellow);
+        }
+        
+        .toggle-switch {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-main);
+            font-size: 0.85rem;
+            margin-right: 10px;
+            font-weight: 600;
+        }
+
+        .editable-active [contenteditable="true"] {
+            outline: 1px dashed var(--accent-yellow);
+            background: rgba(251, 191, 36, 0.05);
+            padding: 2px 4px;
+        }
+
+        .container {
+            max-width: 1350px;
+            margin: 0 auto;
+            padding: 100px 28px 60px 28px;
+        }
+
+        /* Typography */
+        h1 { font-size: 2.6rem; margin-bottom: 0.2rem; color: var(--text-main); letter-spacing: -0.02em; margin-top: 0; font-weight: 800; }
+        
+        h2 { 
+            font-size: 1.4rem; 
+            color: var(--accent-yellow); 
+            margin-top: 3.5rem; 
+            margin-bottom: 1.5rem; 
+            border-bottom: 1px solid var(--glass-border); 
+            padding-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+        }
+        h2 i { color: var(--accent-yellow); font-size: 1.1rem;}
+
+        h3 { font-size: 1.2rem; margin: 0; color: var(--text-main); font-weight: 700; letter-spacing: -0.01em;}
+        .subtitle { font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 25px; font-weight: 500; letter-spacing: -0.01em;}
+        
+        /* Glassmorphism Cards */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 42px;
+            margin-bottom: 24px;
+            box-shadow: var(--card-shadow);
+            transition: all 0.2s ease-out;
+            position: relative;
+        }
+        .glass-card:hover { border-color: rgba(255, 255, 255, 0.2); }
+
+        /* Timeline Section Styles (Text Based) */
+        .timeline-section {
+            position: relative;
+            margin-bottom: 40px;
+            padding: 20px 0;
+            overflow-x: auto;
+            scrollbar-width: none; 
+            -ms-overflow-style: none;
+        }
+        .timeline-section::-webkit-scrollbar { display: none; }
+        
+        .timeline-container {
+            display: grid; 
+            grid-template-columns: repeat(6, 1fr);
+            align-items: flex-start;
+            position: relative;
+            min-width: 975px;
+            padding-top: 10px;
+        }
+        
+        .timeline-line {
+            position: absolute;
+            top: 29px; 
+            left: 30px;
+            right: 30px;
+            height: 2px;
+            background: rgba(255,255,255,0.1);
+            z-index: 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none; 
+            cursor: pointer;
+            transition: transform 0.2s;
+            padding: 0 5px;
+        }
+        .timeline-item:hover { transform: translateY(-3px); }
+
+        /* Simple Dot Marker */
+        .timeline-marker {
+            width: 14px;
+            height: 14px;
+            background: var(--bg-base);
+            border: 3px solid var(--text-secondary);
+            border-radius: 50%;
+            margin: 10px 0 15px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 0 4px var(--bg-base);
+            z-index: 2;
+        }
+        
+        .timeline-item:hover .timeline-marker {
+            background: var(--accent-yellow);
+            border-color: var(--accent-yellow);
+            box-shadow: 0 0 0 4px var(--bg-base), 0 0 10px rgba(251, 191, 36, 0.5);
+        }
+        
+        /* Current Job Highlight */
+        .timeline-item.current .timeline-marker {
+            background: var(--accent-yellow);
+            border-color: var(--accent-yellow);
+        }
+
+        .timeline-year {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .timeline-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .timeline-company {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        
+        .timeline-role {
+            font-size: 0.8rem;
+            color: var(--accent-yellow);
+            font-weight: 500;
+            white-space: nowrap;
+            opacity: 0.9;
+        }
+        
+        .timeline-team {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
+            white-space: normal; /* Allow team name to wrap */
+            line-height: 1.2;
+            word-break: keep-all;
+        }
+
+        .timeline-notice {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: -10px;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        /* Header Section (Info Removed) */
+        header { text-align: center; margin-bottom: 40px; }
+
+        /* Summary Section */
+        .summary-text { font-size: 1.05rem; color: var(--text-secondary); text-align: justify; word-break: keep-all; line-height: 1.8; }
+        .highlight { color: var(--accent-yellow); font-weight: 600; }
+
+        /* Skills Grid */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+        .skill-item { 
+            background: rgba(255, 255, 255, 0.03); 
+            border-radius: 6px; 
+            padding: 12px; 
+            text-align: center; 
+            color: var(--text-main); 
+            font-weight: 600; 
+            font-size: 0.9rem;
+            border: 1px solid var(--glass-border);
+            transition: all 0.2s;
+        }
+        .skill-item:hover {
+            border-color: var(--accent-yellow);
+            color: var(--accent-yellow);
+            background: rgba(251, 191, 36, 0.05);
+        }
+
+        /* Experience Section */
+        .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed var(--glass-border);}
+        .exp-period { color: var(--text-secondary); font-size: 0.9rem; font-weight: 500; font-variant-numeric: tabular-nums; }
+        .company-role { display: flex; flex-direction: column; }
+        .role-title { font-size: 1.1rem; color: var(--accent-yellow); margin-top: 4px; font-weight: 600;}
+        /* Added Team info in experience section */
+        .team-info { font-size: 0.9rem; color: var(--text-secondary); margin-top: 2px; font-style: italic;}
+        
+        .main-points { list-style: none; padding: 0; margin: 0; }
+        .main-points li { margin-bottom: 8px; padding-left: 20px; position: relative; color: var(--text-main); font-size: 0.95rem;}
+        .main-points li::before { content: "▪"; position: absolute; left: 2px; color: var(--accent-yellow); font-size: 1.2rem; line-height: 1; top: 2px; }
+        .impact-text { color: var(--accent-yellow); font-weight: 700; }
+        .lead-text { 
+            color: var(--accent-red-muted); 
+            font-weight: 700; 
+            margin-right: 8px; 
+            font-size: 0.75rem; 
+            border: 1px solid var(--accent-red-muted); 
+            background: rgba(225, 29, 72, 0.1);
+            padding: 1px 6px; 
+            border-radius: 4px;
+            vertical-align: text-top;
+            display: inline-block;
+        }
+
+        /* Details & Print */
+        details { margin-top: 18px; background: rgba(0, 0, 0, 0.2); border-radius: 8px; border: 1px solid var(--glass-border); overflow: hidden;}
+        /* open state removed to default closed */
+        details[open] { border-color: var(--accent-yellow); background: rgba(0, 0, 0, 0.3); }
+        summary { padding: 12px; cursor: pointer; color: var(--text-secondary); font-size: 0.85rem; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px; background: rgba(255, 255, 255, 0.02); }
+        summary:hover { color: var(--accent-yellow); background: rgba(255, 255, 255, 0.05); }
+        summary::-webkit-details-marker { display: none; }
+        .detail-content { padding: 24px; border-top: 1px solid var(--glass-border); font-size: 0.9rem; color: var(--text-secondary); }
+        .project-block { margin-bottom: 24px; padding-left: 16px; border-left: 3px solid var(--accent-yellow); }
+        .project-block:last-child { margin-bottom: 0; }
+        .project-title { color: var(--text-main); font-weight: 700; margin-bottom: 10px; display: block; font-size: 1rem; }
+        
+        /* Adjusted Tech Stack to look good at top */
+        .tech-stack { 
+            font-family: 'Pretendard', monospace; 
+            color: var(--accent-yellow); 
+            font-size: 0.8rem; 
+            margin-bottom: 8px; /* Spacing below tech stack before title */
+            display: inline-block; 
+            background: var(--accent-yellow-bg); 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            font-weight: 600; 
+            border: 1px solid rgba(251, 191, 36, 0.2); 
+        }
+        
+        .detail-row { display: flex; margin-bottom: 8px; align-items: baseline; }
+        .detail-label { min-width: 80px; color: var(--text-main); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+        .detail-list { margin: 5px 0; padding-left: 20px; list-style-type: disc; color: var(--text-secondary); }
+
+        @media print {
+            /* 배경/색상 그대로 출력 */
+            * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+            /* UI 요소 숨김 (Career Timeline은 표기 유지) */
+            .toolbar { display: none !important; }
+            /* 카드 page-break 방지 */
+            .glass-card { break-inside: avoid; page-break-inside: avoid; }
+            /* details 토글 — 접힌 채로 출력 */
+            details > :not(summary) { display: none !important; }
+            summary::marker, summary::-webkit-details-marker { display: none !important; }
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .exp-header { flex-direction: column; }
+            .toolbar { width: 90%; left: 5%; justify-content: center; top: auto; bottom: 20px; }
+            .container { padding-top: 40px; padding-bottom: 100px; }
+            .timeline-container { display: flex; flex-direction: column; align-items: flex-start; min-width: auto; padding-left: 20px; }
+            .timeline-line { width: 2px; height: 100%; left: 16px; top: 0; }
+            .timeline-item { flex-direction: row; margin-bottom: 20px; width: 100%; text-align: left; align-items: flex-start; }
+            .timeline-marker { margin: 5px 15px 0 0; }
+            .timeline-content { align-items: flex-start; }
+            .timeline-notice { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Language Switch -->
+<div class="toolbar">
+    <a href="../" class="btn">KO</a>
+    <a href="./" class="btn primary" aria-current="page">EN</a>
+</div>
+
+<div class="container" id="resumeContent">
+
+    <header>
+        <h1>Hojin Chon</h1>
+        <div class="subtitle" style="margin-bottom: 8px;">Data / Business Analyst</div>
+        <div style="font-size: 0.95rem; margin-bottom: 25px;"><a href="https://asiwish0506.github.io/resume/en/" class="highlight" style="text-decoration: none; font-weight: 500;">https://asiwish0506.github.io/resume/en/</a></div>
+        <!-- Contact Info Removed -->
+    </header>
+
+    <!-- 1. Professional Summary -->
+    <section>
+        <div class="glass-card">
+            <div class="summary-text">
+                A <span class="highlight">data analyst</span> who started my career in 2015. I consider my greatest strength to be defining and solving complex business problems with data. Starting from business KPI design and dashboard operations, I have carried out a wide range of data-driven work — inventory data analysis and operational process design from an S&amp;OP perspective, data analysis for CRM and target marketing, and user analysis from a web/app product perspective. I also bring diverse domain experience across top-tier platforms including Woowa Brothers, Yanolja, and Coupang. At my current company, Woowa Brothers, I have driven end-to-end optimization of the user journey from both business and product perspectives — including <span class="highlight">company-wide KPI design</span> and <span class="highlight" style="color: rgb(251, 191, 36);">planning and operating CRM target-marketing projects</span>. Beyond analysis alone, I have repeatedly taken on the <span class="highlight" style="color: rgb(251, 191, 36);">Project Manager (PM)</span> role to drive product and business growth. Most recently, in the B-mart Marketing Team, I have been leading <span class="highlight" style="color: rgb(251, 191, 36);">Claude (LLM)-based analytics automation and AX (AI Transformation)</span> — not only automating repetitive analysis and reporting to raise data-utilization productivity across the entire division, but also building and improving a variety of marketing operation tools and systems.</div>
+        </div>
+    </section>
+
+    <!-- 2. Career Timeline (Text Based) -->
+    <section id="section-career-timeline">
+        <h2><i class="fas fa-history"></i> Career Timeline</h2>
+        <div class="timeline-notice">Click a company name to jump to that role.</div>
+        <div class="glass-card timeline-section">
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <a href="#exp-lotte" class="timeline-item">
+                    <div class="timeline-year">2015</div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-company">Lotte Duty Free</div>
+                        <div class="timeline-role">Business Analyst</div>
+                        <div class="timeline-team">Domestic Sales HQ / Event Efficiency TF / ICM Team</div>
+                    </div>
+                </a>
+
+                <a href="#exp-adt" class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-company">ADT Caps</div>
+                        <div class="timeline-role">Data Scientist</div>
+                        <div class="timeline-team">Data Marketing Team</div>
+                    </div>
+                </a>
+
+                <a href="#exp-coupang" class="timeline-item">
+                    <div class="timeline-year">2021</div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-company">Coupang</div>
+                        <div class="timeline-role">Business Analyst</div>
+                        <div class="timeline-team">CRM Targeting Team</div>
+                    </div>
+                </a>
+
+                <a href="#exp-hyper" class="timeline-item">
+                    <div class="timeline-year">2022.07</div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-company">HyperConnect</div>
+                        <div class="timeline-role">Data Analyst</div>
+                        <div class="timeline-team">Data Analytics Team</div>
+                    </div>
+                </a>
+
+                <a href="#exp-yanolja" class="timeline-item">
+                    <div class="timeline-year">2022.12</div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-company">Yanolja</div>
+                        <div class="timeline-role">Data Analyst</div>
+                        <div class="timeline-team">Data Analytics Team</div>
+                    </div>
+                </a>
+
+                <a href="#exp-woowa" class="timeline-item current">
+                    <div class="timeline-year">2023 ~</div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-company">Woowa Brothers</div>
+                        <div class="timeline-role" style="color: rgb(251, 191, 36);">Business Analyst</div>
+                        <div class="timeline-team">Strategy Planning / Commerce Biz Planning / Commerce360 TF / B-mart Marketing Team</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Education -->
+    <section>
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <div class="glass-card">
+            <div class="edu-item">
+                <div>
+                    <h3>Seoul National University</h3>
+                    <div style="color:var(--text-secondary); font-size:0.95rem; margin-top:4px;">Aesthetics / Business Administration (Double Major), GPA 3.81/4.3</div>
+                </div>
+                <div class="exp-period">2008.03 ~ 2015.02</div>
+            </div>
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top:15px; border-top:1px dashed var(--glass-border); padding-top:10px;">
+                * Business-level English (TOEIC 985; experience collaborating with non-Korean team leads at Coupang and HyperConnect)
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Skills -->
+    <section>
+        <h2><i class="fas fa-layer-group"></i> Core Competencies</h2>
+        <div class="skills-grid">
+            <div class="skill-item">Strategy &amp; KPI Design</div>
+            <div class="skill-item">CRM Planning &amp; Segmentation</div>
+            <div class="skill-item">Project Management</div>
+            <div class="skill-item">User Funnel Analysis</div>
+            <div class="skill-item">A/B Testing Design</div>
+            <div class="skill-item">SQL &amp; Python</div>
+            <div class="skill-item">Tableau &amp; Dashboarding</div>
+            <div class="skill-item">Data Pipeline (Airflow)</div>
+            <div class="skill-item">AI Workflow Automation (LLM)</div>
+        </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section>
+        <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+
+        <!-- Woowa Brothers -->
+        <div id="exp-woowa" class="glass-card">
+            <div class="exp-header">
+                <div class="company-role">
+                    <h3>Woowa Brothers</h3>
+                    <div class="role-title">Business Analyst</div>
+                    <div class="team-info">Strategy Planning / Commerce Business Planning / Commerce360 TF / B-mart Marketing Team</div>
+                </div>
+                <span class="exp-period">2023.12 ~ Present</span>
+            </div>
+            <ul class="main-points">
+                <li><span class="lead-text">LEAD</span>Led division-wide AX on Claude (LLM) — planned and ran AI analysis sessions and cowork training, and built SQL workflow skills and domain analysis context (table / term / join specs)</li>
+                <li>Built a promotion DB (SoT) — consolidated fragmented promotion assets and information into a single Source of Truth, auto-linked to the marketing calendar and performance reports</li>
+                <li>Automated various operational processes — Slack alert bot, in-house analytics-table Airflow batches, automated promotion performance reports, and more</li>
+                <li>Built and operated an integrated commerce marketing dashboard ecosystem (5-channel inventory performance / traffic / Baemin Club / promotion performance)</li>
+                <li>Designed and ran B-mart CRM target marketing (5-day market, win-back, penetration expansion) and established regular Baemin Club penetration and monthly customer analysis</li>
+                <li><span class="lead-text">PM</span>Designed company-wide commerce KPIs and led the 'Commerce360' CRM project — early results via a purchase-conversion prediction model <span class="impact-text">(Revenue +1.93% / Cost -7.59%)</span></li>
+            </ul>
+            <details>
+                <summary><i class="fas fa-chevron-down"></i> View detailed projects &amp; achievements (Click)</summary>
+                <div class="detail-content">
+                    <div class="project-block">
+                        <span class="tech-stack">Claude (Claude Code), MCP, Python, Airflow, Git</span>
+                        <span class="project-title">1. Leading Claude (LLM)-based division AX &amp; analytics automation</span>
+                        <div class="detail-row"><span class="detail-label">Role</span> <span>Leading division-level AI adoption planning &amp; training and standardizing the analysis workflow</span></div>
+                        <div class="detail-row"><span class="detail-label">Action</span>
+                            <ul class="detail-list">
+                                <li>Planned and ran AI analysis sessions and cowork training (member AI-usage onboarding)</li>
+                                <li>Built Claude SQL workflow skills + domain analysis context (table / column / term / join specs) → standardized so the LLM consistently generates queries that fit our in-house data structures</li>
+                                <li>Developed automation tools for repetitive tasks: a same-day coupon-usage Slack alert bot, and a daily 7 AM temp-table load and segment-pool Airflow DAG</li>
+                                <li>Built report / dashboard automation pipelines</li>
+                            </ul>
+                        </div>
+                        <div class="detail-row"><span class="detail-label">Impact</span> <span>Shortened and standardized the division's analysis / reporting cycle, turning data work once concentrated on a single analyst into self-service</span></div>
+                    </div>
+                    <div class="project-block">
+                        <span class="tech-stack">Google Sheets·Apps Script, SQL (Trino), Python, Airflow</span>
+                        <span class="project-title">2. Building an integrated promotion DB (SoT) and automating performance reports</span>
+                        <div class="detail-row"><span class="detail-label">Role</span> <span>Designed a single source of truth (SoT) for fragmented promotion operations info and automated performance aggregation</span></div>
+                        <div class="detail-row"><span class="detail-label">Action</span>
+                            <ul class="detail-list">
+                                <li>Consolidated scattered promotion info (sheets, calendar, coupons, message assets) into a single SoT DB — standardized the promotion / asset mapping schema</li>
+                                <li>Auto-linked the SoT-based marketing calendar (Apps Script) and unified the operational input process</li>
+                                <li>Designed standard traffic / conversion / cost metrics in SQL per promotion and automated per-round performance reports via Airflow batches</li>
+                                <li>Stabilized unattended operations with auto-generated report sheets, permission sharing, and retry-on-failure</li>
+                            </ul>
+                        </div>
+                        <div class="detail-row"><span class="detail-label">Impact</span> <span>Unified promotion operations info and performance criteria, replacing manual per-round aggregation with automated reports</span></div>
+                    </div>
+                    <div class="project-block">
+                        <span class="tech-stack">SQL (Trino), Python, Redash, Zeppelin, Airflow, JavaScript</span>
+                        <span class="project-title">3. Building and operating an integrated commerce marketing dashboard ecosystem</span>
+                        <div class="detail-row"><span class="detail-label">Role</span> <span>Defined inventory / traffic / performance metrics and designed dashboards &amp; data pipelines</span></div>
+                        <div class="detail-row"><span class="detail-label">Action</span>
+                            <ul class="detail-list">
+                                <li>Built and operated a 5-channel integrated inventory-performance tracking dashboard</li>
+                                <li>Built and enhanced marketing traffic / Baemin Club / promotion performance dashboards</li>
+                                <li>Migrated the traffic query book to Airflow and backfilled the entire traffic table to ensure data consistency</li>
+                            </ul>
+                        </div>
+                        <div class="detail-row"><span class="detail-label">Impact</span> <span>Real-time monitoring of channel and promotion performance in a single view, supporting marketing and management decisions</span></div>
+                    </div>
+                    <div class="project-block">
+                        <span class="tech-stack">SQL (Trino), Python, Zeppelin</span>
+                        <span class="project-title">4. B-mart CRM target marketing and customer analysis</span>
+                        <div class="detail-row"><span class="detail-label">Role</span> <span>Designed target segments, simulated promotion costs, and operated customer analysis reports</span></div>
+                        <div class="detail-row"><span class="detail-label">Action</span>
+                            <ul class="detail-list">
+                                <li>Designed B-mart targeting for 5-day market / win-back / active customers and simulated promotion costs</li>
+                                <li>Analyzed Baemin Club penetration, redesigned benefits, and established a monthly Customer Analysis routine</li>
+                                <li>Built an organic-score-based coupon-scheme recommendation matrix and set de-targeting cutoff policies</li>
+                            </ul>
+                        </div>
+                        <div class="detail-row"><span class="detail-label">Impact</span> <span>Derived directions to improve promotion cost efficiency and commerce penetration through data-based targeting</span></div>
+                    </div>
+                    <div class="project-block">
+                        <span class="tech-stack">SQL, Python, Redash, Zeppelin, Airflow</span>
+                        <span class="project-title">5. Commerce360 project PM &amp; purchase-conversion prediction model</span>
+                        <div class="detail-row"><span class="detail-label">Role</span> <span>Planned overall project direction, defined key specs, and led cross-functional collaboration</span></div>
+                        <div class="detail-row"><span class="detail-label">Action</span>
+                            <ul class="detail-list">
+                                <li>Built the Commerce360 customer DB to underpin future commerce target marketing</li><li>Built a classification model to select prospects with high purchase likelihood</li>
+                                <li>Extracted model-score-based target segments and executed CRM marketing</li>
+                                <li>Designed and led the first cost-efficiency experiment end to end</li>
+                            </ul>
+                        </div>
+                         <div class="detail-row"><span class="detail-label">Impact</span> <span>In the first experiment, achieved Revenue +1.93% and Cost -7.59% MoM (as of Dec 2025)</span></div>
+                        </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- Yanolja -->
+        <div id="exp-yanolja" class="glass-card">
+            <div class="exp-header">
+                <div class="company-role">
+                    <h3>Yanolja</h3>
+                    <div class="role-title">Data Analyst</div>
+                    <div class="team-info">Data Analytics Team</div>
+                </div>
+                <span class="exp-period">2022.12 ~ 2023.11</span>
+            </div>
+            <ul class="main-points">
+                <li><span class="lead-text">PM</span>Led in-house A/B testing operations and drove an experimentation culture</li>
+                <li>Analyzed the performance of domestic-accommodation and Daily Hotel products and proposed strategy</li>
+                <li>Improved data accessibility by designing data marts and analytics tables</li>
+            </ul>
+            <details>
+                <summary><i class="fas fa-chevron-down"></i> View detailed projects &amp; achievements (Click)</summary>
+                <div class="detail-content">
+                    <div class="project-block">
+                         <span class="tech-stack">SQL, Python, Redash, Tableau, Airflow</span>
+                        <span class="project-title">1. Leading in-house A/B testing operations and establishing an experimentation culture</span>
+                        <div class="detail-row"><span class="detail-label">Action</span>
+                            <ul class="detail-list">
+                                <li>Established experiment-design guidelines and collaboration processes with POs, dev, and other stakeholders</li><li>Introduced and operated an experiment-Layer system for running many simultaneous experiments</li>
+                                <li>Standardized metrics by building an experiment-results analysis dashboard</li>
+                            </ul>
+                        </div>
+                        </div>
+                    <div class="project-block">
+                        <span class="project-title">2. Building data marts and analytics tables</span>
+                        <div class="detail-row"><span class="detail-label">Action</span> <span>Developed and operated analytics DBs for the Daily Hotel and Yanolja domestic-accommodation products</span></div>
+                        <div class="detail-row"><span class="detail-label">Impact</span> <span>Increased analysis efficiency inside and outside the team and improved data accessibility</span></div>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- HyperConnect -->
+        <div id="exp-hyper" class="glass-card">
+            <div class="exp-header">
+                <div class="company-role">
+                    <h3>HyperConnect</h3>
+                    <div class="role-title">Data Analyst</div>
+                    <div class="team-info">Data Analytics Team</div>
+                </div>
+                <span class="exp-period">2022.07 ~ 2022.11</span>
+            </div>
+            <ul class="main-points">
+                <li>Analyzed new-feature performance for the global social app Azar and derived insights</li>
+                <li>Developed sampling logic to remove selection bias and turned it into a dashboard</li>
+                <li>Automated experiment-significance testing using a non-parametric method (permutation test)</li><li>Data Mart project: log redesign and mart schema design</li>
+            </ul>
+            <details>
+                <summary><i class="fas fa-chevron-down"></i> View detailed projects &amp; achievements (Click)</summary>
+                <div class="detail-content">
+                    <div class="project-block">
+                        <span class="tech-stack">SQL, Python, BigQuery, Data Studio, Airflow</span>
+                        <span class="project-title">1. Enhancing the experiment-analysis dashboard and analyzing new features</span>
+                        <div class="detail-row"><span class="detail-label">Action</span>
+                             <ul class="detail-list">
+                                <li>Built an A/B test dashboard: implemented significance testing with permutation tests usable for any experiment regardless of distribution or population size, and built the dashboard</li>
+                                <li>Developed and applied a sampling methodology to remove the selection bias that can arise when analyzing new features</li>
+                            </ul>
+                        </div>
+                        </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- Coupang -->
+        <div id="exp-coupang" class="glass-card">
+            <div class="exp-header">
+                <div class="company-role">
+                    <h3>Coupang</h3>
+                    <div class="role-title">Business Analyst</div>
+                    <div class="team-info">CRM Targeting Team</div>
+                </div>
+                <span class="exp-period">2021.02 ~ 2022.06</span>
+            </div>
+            <ul class="main-points">
+                <li>Established user-segment strategy for target marketing of Rocket Fresh and other categories</li>
+                <li>Enhanced the purchase-propensity model and tuned parameters</li>
+                <li>Improved target-marketing operational efficiency via Airflow / AWS data-pipeline automation</li>
+                <li>Performed other marketing-oriented data analysis and support</li>
+            </ul>
+            <details>
+                <summary><i class="fas fa-chevron-down"></i> View detailed projects &amp; achievements (Click)</summary>
+                <div class="detail-content">
+                    <div class="project-block">
+                        <span class="tech-stack">SQL, Python, PySpark, Airflow, Amazon S3, Tableau</span>
+                        <span class="project-title">1. CRM target-marketing efficiency &amp; pipeline automation</span>
+                        <div class="detail-row"><span class="detail-label">Action</span>
+                             <ul class="detail-list">
+                                <li>Automated batch data pipelines from source data for target extraction using Airflow and S3</li>
+                                <li>Automated the previously manual campaign-target upload process in collaboration with the dev team</li>
+                            </ul>
+                        </div>
+                        <div class="detail-row"><span class="detail-label">Impact</span> <span>Shortened target extraction and upload time, maximizing operational efficiency</span></div>
+                        </div>
+                    <div class="project-block">
+                        <span class="project-title">2. Purchase-propensity model improvement &amp; A/B test design</span>
+                        <div class="detail-row"><span class="detail-label">Action</span>
+                             <ul class="detail-list">
+                                <li>Improved targeting performance by adding variables and tuning parameters on the existing propensity model</li>
+                                <li>Proposed heuristic targeting logic for categories where model scores were less effective</li><li>Designed and operated treatment / control groups for running simultaneous promotion experiments</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- ADT Caps -->
+        <div id="exp-adt" class="glass-card">
+            <div class="exp-header">
+                <div class="company-role">
+                    <h3>ADT Caps (now SK Shieldus)</h3>
+                    <div class="role-title">Data Scientist</div>
+                    <div class="team-info">Data Marketing Team</div>
+                </div>
+                <span class="exp-period">2020.06 ~ 2021.01</span>
+            </div>
+            <ul class="main-points">
+                <li>Developed a conversion-prediction model for new TM/LMS targeting of Caps Home security products</li>
+                <li>Designed variables and modeling using integrated SKT-affiliate data</li>
+                <li>Improved and automated the visualization process for TM sales-log data</li>
+            </ul>
+            <details>
+                <summary><i class="fas fa-chevron-down"></i> View detailed projects &amp; achievements (Click)</summary>
+                <div class="detail-content">
+                    <div class="project-block">
+                        <span class="tech-stack">SQL, Python</span>
+                        <span class="project-title">1. ML modeling for security-product upsell / cross-sell targeting</span>
+                        <div class="detail-row"><span class="detail-label">Action</span>
+                             <ul class="detail-list">
+                                <li>Designed customer life-pattern variables using integrated SKT-affiliate data (telecom, commerce, etc.)</li>
+                                <li>Developed a scoring model that predicts customers with high conversion likelihood</li>
+                            </ul>
+                        </div>
+                        </div>
+                    <div class="project-block">
+                        <span class="project-title">2. Improving the TM log-data visualization process</span>
+                        <div class="detail-row"><span class="detail-label">Action</span> <span>Cleaned TM log data with SQL and connected it to Tableau, turning previously manual performance aggregation into a dashboard</span></div>
+                        <div class="detail-row"><span class="detail-label">Impact</span> <span>Shortened work time and greatly improved efficiency</span></div>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- Lotte Duty Free -->
+        <div id="exp-lotte" class="glass-card">
+            <div class="exp-header">
+                <div class="company-role">
+                    <h3>Lotte Duty Free</h3>
+                    <div class="role-title">Business Analyst</div>
+                    <div class="team-info">Domestic Sales HQ / Event Efficiency TF / ICM Team</div>
+                </div>
+                <span class="exp-period">2015.01 ~ 2020.06</span>
+            </div>
+            <ul class="main-points">
+                <li><span class="lead-text">PM</span>Inventory allocation optimization project (optimizing allocation of undersupplied products + maximizing contribution margin)</li>
+                <li><span class="lead-text">PM</span>Developed an automated product-transfer system (algorithm to resolve inventory imbalance)</li>
+                <li><span class="lead-text">PM</span>Event Efficiency TF: planned a duplicate-event monitoring system</li>
+                <li>Analyzed company-wide sales data and built Spotfire-based on-site dashboards</li>
+                <li><span class="impact-text">Impact: The automated transfer system delivered +1.5B KRW in average monthly revenue</span></li>
+            </ul>
+            <details>
+                <summary><i class="fas fa-chevron-down"></i> View detailed projects &amp; achievements (Click)</summary>
+                <div class="detail-content">
+                    <div class="project-block">
+                        <span class="tech-stack">SQL, R, In-house system</span>
+                        <span class="project-title">1. PM for automated product-transfer system development</span>
+                        <div class="detail-row"><span class="detail-label">Action</span> <span>Designed metrics to identify over/under stock and logic to compute optimal transfer volumes, and automated the system in collaboration with IT</span></div>
+                        <div class="detail-row"><span class="detail-label">Impact</span> <span>+1.5B KRW average monthly revenue after adoption (as of 2018)</span></div>
+                        <br></div>
+                    <div class="project-block">
+                        <span class="project-title">2. PM for product allocation optimization project</span>
+                        <div class="detail-row"><span class="detail-label">Action</span> <span>For popular SKUs prone to stockouts, designed variables considering per-channel margin and inventory to maximize contribution margin, and established an optimal allocation strategy</span></div>
+                        <div class="detail-row"><span class="detail-label">Impact</span> <span>+200M KRW average monthly revenue vs. prior ordering (as of H2 2019)</span></div></div><div class="project-block"><span class="project-title">3. Event Efficiency TF</span>
+                        <div class="detail-row"><span class="detail-label">Action</span> <span>Defined metrics to judge overlap among promotions run individually by stores, and designed prioritization logic and a monitoring dashboard</span></div>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+    </section>
+
+</div>
+
+</body></html>
